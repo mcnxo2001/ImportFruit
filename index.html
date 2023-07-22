@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Import and Export Website</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="loginForm h-100">
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <div class="loginFormInfor col-lg-8 col-md-12 col-sm-12 m-0 p-0">
+                    <div id="carouselExampleCaptions" class="carousel slide h-100 bg-">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner h-100">
+                            <div class="carousel-item active">
+                                <img src="img/img-login-1.jpg" class="d-block" alt="...">
+                                <div class="carousel-caption">
+                                    <h5>Hệ thống quản lý xuất nhập trái cây</h5>
+                                    <p>Quản lý hàng hóa hiệu quả</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/img-login-2.jpg" class="d-block" alt="...">
+                                <div class="carousel-caption">
+                                    <h5>Theo dõi thông tin xuất nhập trái cây</h5>
+                                    <p>Thông tin hàng hóa được lưu trữ và theo dõi hiệu quả</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/img-login-3.jpg" class="d-block" alt="...">
+                                <div class="carousel-caption">
+                                    <h5>Thống kê, báo cáo hàng hóa</h5>
+                                    <p>Kiểm soát, quản lý hàng hóa hiệu quả</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-12 col-sm-12 py-3" id="LoginArena">
+                    <div class="d-flex flex-column justify-content-between h-100">
+                        <div class="theme d-flex flex-column justify-content-center align-content-center">
+                            <span class="fw-bold mb-2">Login</span>
+                            <div class="title text-center">Welcome to the Fruit Management System</div>
+                        </div>
+                        <form class="loginForm px-4 d-flex flex-column justify-content-center">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control my-2" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control my-2" id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary my-3">Submit</button>
+                        </form>
+                        <div class="aboutUs text-center text-secondary d-flex flex-column justify-content-center">
+                            <div>
+                                <i class="bi bi-google"></i>
+                                <span>Sign in with Google</span>
+                            </div>
+                            <div>
+                                New account?
+                                <div class="text-success" id="btCreateAccount">Create account</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-12 col-sm-12 py-3" id="CreatAccountArea">
+                    <div class="d-flex flex-column justify-content-between h-100">
+                        <div class="theme d-flex flex-column justify-content-center align-content-center">
+                            <span class="fw-bold mb-2">Registion</span>
+                            <div class="title text-center">Welcome to the Fruit Management System</div>
+                        </div>
+                        <form class="loginForm px-4 d-flex flex-column justify-content-center">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Full name</label>
+                                <input type="email" class="form-control my-2" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                    placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control my-2" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control my-2" id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Confirm Password</label>
+                                <input type="password" class="form-control my-2" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                        <div class="aboutUs text-center text-secondary d-flex flex-column justify-content-center">
+                            <div>
+                                <i class="bi bi-google"></i>
+                                <span>Sign in with Google</span>
+                            </div>
+                            <div>
+                                Have a exist account
+                                <div class="text-success" id="btLoginAccount">Login account</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
