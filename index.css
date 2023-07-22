@@ -39,11 +39,6 @@ body {
     z-index: 1;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    font-size: 30px;
-}
-
 .text-success {
     cursor: pointer;
 }
@@ -169,3 +164,6 @@ form{
 #CreatAccountArea {
     display: none;
 }
+
+
+
