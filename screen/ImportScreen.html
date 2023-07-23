@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="ImportScreen.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+        <a class="navbar-brand fw-semibold fs-4 brandFont" href="#"><span class="text-danger fw-semibold">Fruit</span>System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                    <a class="nav-link fw-semibold fs-5" id="btImport">Import</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold fs-5" id="btExport">Export</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="h-100 m-3 p-3 rounded-4" id="importArena">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-6 col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="fw-semibold">Tên nhà vườn</label>
+                            <input type="text" class="form-control mt-2" id="farmName" aria-describedby="emailHelp"
+                                placeholder="VD: Trang trại Dưa hấu">
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="exampleInputPassword1" class="fw-semibold">Mã nhập hàng</label>
+                            <input type="text" class="form-control mt-2" id="importCode" placeholder="VD: NA100290">
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="col-12 col-sm-6 col-lg-6 col-md-6">
+                    <div class="row" id="formContent">
+                        <form id="formItem">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="fw-semibold">Tên loại quả</label>
+                                <input type="text" class="form-control mt-2" id="fruitName1" aria-describedby="emailHelp"
+                                    placeholder="VD: Cam">
+                            </div>
+                            <div class="form-group mt-2">
+                                <label for="exampleInputPassword1" class="fw-semibold">Trọng lượng</label>
+                                <input type="text" class="form-control mt-2" id="weightFruit1" placeholder="VD: 10 Kg">
+                            </div>
+                        </form>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3" id="btAddNewForm">Add New Form</button>
+                    <button type="submit" class="btn btn-primary mt-3" id="btSubmit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-warning" id="exportArena">
+        456
+    </div>
+</body>
+<script src="ImportScreen.js"></script>
+</html>

@@ -1,0 +1,23 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+.navbar-brand{
+    font-family: cursive;
+}
+
+.nav-link{
+    font-family: cursive;
+}
+
+.collapse a{
+    cursor: pointer;
+}
+
+#exportArena{
+    display: none;
+}

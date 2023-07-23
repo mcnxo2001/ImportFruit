@@ -12,3 +12,8 @@ btLoginAccount.addEventListener('click', function(){
     CreatAccountArea.style.display = 'none';
     LoginArena.style.display = 'block';
 })
+
+let btLogin = document.getElementById('btLogin')
+btLogin.addEventListener('click', function(){
+    window.open('./screen/ImportScreen.html')
+})
