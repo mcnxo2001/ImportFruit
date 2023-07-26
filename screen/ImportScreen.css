@@ -7,11 +7,11 @@ body{
 }
 
 .navbar-brand{
-    font-family: cursive;
+    font-family: inherit;
 }
 
 .nav-link{
-    font-family: cursive;
+    font-family: inherit;
 }
 
 .collapse a{

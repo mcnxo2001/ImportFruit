@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +13,16 @@
     <link rel="stylesheet" href="ImportScreen.css">
     <title>Document</title>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
-        <a class="navbar-brand fw-semibold fs-4 brandFont" href="#"><span class="text-danger fw-semibold">Fruit</span>System</a>
+        <a class="navbar-brand fw-semibold fs-4 brandFont" href="#"><span
+                class="text-danger fw-semibold">Fruit</span>System</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-    
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item active">
@@ -32,39 +35,59 @@
         </div>
     </nav>
 
-    <div class="h-100 m-3 p-3 rounded-4" id="importArena">
+    <div class="btSubmitArena">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-6 col-lg-6 col-md-6">
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1" class="fw-semibold">Tên nhà vườn</label>
-                            <input type="text" class="form-control mt-2" id="farmName" aria-describedby="emailHelp"
-                                placeholder="VD: Trang trại Dưa hấu">
-                        </div>
-                        <div class="form-group mt-2">
-                            <label for="exampleInputPassword1" class="fw-semibold">Mã nhập hàng</label>
-                            <input type="text" class="form-control mt-2" id="importCode" placeholder="VD: NA100290">
-                        </div>
-                    </form>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3 px-3">
+                    <button type="submit" class="btn btn-success my-3" id="btSubmitInformation">SUBMIT</button>
                 </div>
-                
-                <div class="col-12 col-sm-6 col-lg-6 col-md-6">
-                    <div class="row" id="formContent">
-                        <form id="formItem">
+            </div>
+        </div>
+    </div>
+
+    <div class="h-100 rounded-4" id="importArena">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-lg-6 col-md-6">
+                    <div class="row mx-1">
+                        <form class="border p-3 rounded-3 border-danger mb-2">
                             <div class="form-group">
-                                <label for="exampleInputEmail1" class="fw-semibold">Tên loại quả</label>
-                                <input type="text" class="form-control mt-2" id="fruitName1" aria-describedby="emailHelp"
-                                    placeholder="VD: Cam">
+                                <label for="exampleInputEmail1" class="fw-semibold">Tên nhà vườn</label>
+                                <input type="text" class="form-control mt-2" id="farmName" aria-describedby="emailHelp">
                             </div>
                             <div class="form-group mt-2">
-                                <label for="exampleInputPassword1" class="fw-semibold">Trọng lượng</label>
-                                <input type="text" class="form-control mt-2" id="weightFruit1" placeholder="VD: 10 Kg">
+                                <label for="exampleInputPassword1" class="fw-semibold">Mã nhập hàng</label>
+                                <input type="text" class="form-control mt-2" id="importCode">
                             </div>
                         </form>
                     </div>
-                    <button type="submit" class="btn btn-primary mt-3" id="btAddNewForm">Add New Form</button>
-                    <button type="submit" class="btn btn-primary mt-3" id="btSubmit">Submit</button>
+                </div>
+
+                <div class="col-12 col-sm-12 col-lg-6 col-md-6">
+                    <div class="row mx-1" id="formContent">
+                        <form id="formItem1" class="border p-3 rounded-3 border-primary mb-2">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="fw-semibold">Tên loại quả</label>
+                                <input type="text" class="form-control mt-2" id="fruitName1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group mt-2">
+                                <label for="exampleInputPassword1" class="fw-semibold">Số lượng thùng</label>
+                                <input type="text" class="form-control mt-2" id="amountBoxFruit1">
+                            </div>
+                            <div class="form-group mt-2">
+                                <label for="exampleInputPassword1" class="fw-semibold">Trọng lượng mỗi thùng</label>
+                                <input type="text" class="form-control mt-2" id="weightFruit1">
+                            </div>
+                            <div class="form-group mt-2">
+                                <label for="exampleInputPassword1" class="fw-semibold">Trọng lượng hàng tốt</label>
+                                <input type="text" class="form-control mt-2" id="perfectweightFruit1">
+                            </div>
+                            <button type="button" class="btn btn-primary my-3" id="btDeleteForm1"
+                                onclick="fnDeteleForm(this.id)">Delete Form</button>
+                        </form>
+                    </div>
+                    <button type="button" class="btn btn-primary my-3" id="btAddNewForm">Add New Form</button>
                 </div>
             </div>
         </div>
@@ -75,4 +98,5 @@
     </div>
 </body>
 <script src="ImportScreen.js"></script>
+
 </html>
