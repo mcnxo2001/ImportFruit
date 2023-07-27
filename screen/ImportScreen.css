@@ -23,11 +23,11 @@ body{
 }
 
 #editArena{
-    display: block;
+    display: none;
 }
 
 #importArena{
-    display: none;
+    display: block;
 }
 
 .form-group{
