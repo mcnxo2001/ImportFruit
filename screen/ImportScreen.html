@@ -25,66 +25,88 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item active">
-                    <a class="nav-link fw-semibold fs-5" id="btImport">Import</a>
+                <li class="nav-item d-flex active">
+                    <a class="nav-link fs-5 ms-auto me-auto" id="btImport">Import</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-semibold fs-5" id="btExport">Export</a>
+                <li class="nav-item d-flex">
+                    <a class="nav-link fs-5 ms-auto me-auto" id="btEdit">Edit</a>
+                </li>
+                <li class="nav-item d-flex">
+                    <a class="nav-link fs-5 ms-auto me-auto" id="btExport">Export</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="btSubmitArena">
-        <div class="container">
-            <div class="row">
-                <div class="col-3 col-sm-3 col-md-3 col-lg-3 px-3">
-                    <button type="submit" class="btn btn-success my-3" id="btSubmitInformation">SUBMIT</button>
+    <!-- importArena -->
+
+    <div id="importArena">
+        <div class="btSubmitArena">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+                        <button type="button" class="btn btn-success my-3" id="btSubmitInformation">SUBMIT</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="h-100 rounded-4" id="importArena">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-12 col-lg-6 col-md-6">
-                    <div class="row mx-1">
-                        <form class="border p-3 rounded-3 border-danger mb-2">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1" class="fw-semibold">Tên nhà vườn</label>
-                                <input type="text" class="form-control mt-2" id="farmName" aria-describedby="emailHelp">
-                            </div>
-                            <div class="form-group mt-2">
-                                <label for="exampleInputPassword1" class="fw-semibold">Mã nhập hàng</label>
-                                <input type="text" class="form-control mt-2" id="importCode">
-                            </div>
-                        </form>
-                    </div>
+                <div class="col-12 col-sm-12 col-lg-5 col-md-5">
+                    <form class="border p-3 rounded-3 border-success mb-2">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" class="fw-semibold">Mã báo cáo</label>
+                            <input type="text" class="form-control mt-2" id="reportCode">
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="exampleInputEmail1" class="fw-semibold">Tên nhà vườn</label>
+                            <input type="text" class="form-control mt-2" id="farmName" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="exampleInputPassword1" class="fw-semibold">Mã nhập hàng</label>
+                            <input type="text" class="form-control mt-2" id="importCode">
+                        </div>
+                    </form>
                 </div>
-
-                <div class="col-12 col-sm-12 col-lg-6 col-md-6">
-                    <div class="row mx-1" id="formContent">
+            </div>
+            <div class="row mx-1 mt-2">
+                <div class="col-12 col-sm-12 col-lg-12 col-md-12">
+                    <div class="row" id="formContent">
                         <form id="formItem1" class="border p-3 rounded-3 border-primary mb-2">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1" class="fw-semibold">Tên loại quả</label>
-                                <input type="text" class="form-control mt-2" id="fruitName1"
-                                    aria-describedby="emailHelp">
+                            <div class="row">
+                                <div class="col-12 col-sm-2 col-md-3 col-lg-3">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1" class="fw-semibold">Tên loại quả</label>
+                                        <input type="text" class="form-control mt-2" id="fruitName1"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-2 col-md-3 col-lg-3">
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1" class="fw-semibold">Số lượng thùng</label>
+                                        <input type="text" class="form-control mt-2" id="amountBoxFruit1">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-2 col-md-3 col-lg-3">
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1" class="fw-semibold">Trọng lượng mỗi
+                                            thùng</label>
+                                        <input type="text" class="form-control mt-2" id="weightFruit1">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-2 col-md-3 col-lg-3">
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1" class="fw-semibold">Trọng lượng hàng
+                                            tốt</label>
+                                        <input type="text" class="form-control mt-2" id="perfectweightFruit1">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-2 col-md-3 col-lg-3 coverbtn">
+                                    <button type="button" class="btn btDelete mt-3 btn-danger" id="btDeleteForm1"
+                                        onclick="fnDeteleForm(this.id)">Delete
+                                        Form</button>
+                                </div>
                             </div>
-                            <div class="form-group mt-2">
-                                <label for="exampleInputPassword1" class="fw-semibold">Số lượng thùng</label>
-                                <input type="text" class="form-control mt-2" id="amountBoxFruit1">
-                            </div>
-                            <div class="form-group mt-2">
-                                <label for="exampleInputPassword1" class="fw-semibold">Trọng lượng mỗi thùng</label>
-                                <input type="text" class="form-control mt-2" id="weightFruit1">
-                            </div>
-                            <div class="form-group mt-2">
-                                <label for="exampleInputPassword1" class="fw-semibold">Trọng lượng hàng tốt</label>
-                                <input type="text" class="form-control mt-2" id="perfectweightFruit1">
-                            </div>
-                            <button type="button" class="btn btn-primary my-3" id="btDeleteForm1"
-                                onclick="fnDeteleForm(this.id)">Delete Form</button>
                         </form>
                     </div>
                     <button type="button" class="btn btn-primary my-3" id="btAddNewForm">Add New Form</button>
@@ -93,8 +115,52 @@
         </div>
     </div>
 
+    <!-- exportArena -->
+
     <div class="bg-warning" id="exportArena">
         456
+    </div>
+
+    <!-- editArena -->
+
+    <div id="editArena">
+        <div class="btArena">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 col-sm-2 col-md-2 col-lg-2 d-flex flex-row">
+                        <button type="button" class="btn btn-success my-3 me-2" id="btSubmitEditInformation">SUBMIT</button>
+                        <button type="button" class="btn btn-primary my-3" id="btRetriveInformation">RETRIVE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-lg-5 col-md-5">
+                    <form class="border p-3 rounded-3 border-success mb-2">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" class="fw-semibold">Mã báo cáo</label>
+                            <input type="text" class="form-control mt-2" id="reportCodeEdit">
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="exampleInputEmail1" class="fw-semibold">Tên nhà vườn</label>
+                            <input type="text" class="form-control mt-2" id="farmNameEdit" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="exampleInputPassword1" class="fw-semibold">Mã nhập hàng</label>
+                            <input type="text" class="form-control mt-2" id="importCodeEdit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row mx-1">
+                <div class="col-12 col-sm-12 col-lg-12 col-md-12">
+                    <div class="row" id="formContentEdit">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <script src="ImportScreen.js"></script>

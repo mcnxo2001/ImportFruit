@@ -21,3 +21,39 @@ body{
 #exportArena{
     display: none;
 }
+
+#editArena{
+    display: block;
+}
+
+#importArena{
+    display: none;
+}
+
+.form-group{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btDelete{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.coverbtn{
+    display: flex;
+}
+
+.form-group label{
+    font-size: 12px
+}
+
+.navbar-nav li{
+    width: 80px;
+}
+
+.nav-item a{
+    color: rgba(0, 0, 0, 0.607);
+}
